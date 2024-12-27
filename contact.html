@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+    <link rel="stylesheet" href="../static/color-1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />                                      >
+    <link rel="stylesheet" href="../static/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="../static/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="../static/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="../static/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="../static/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="../static/style-switcher.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span></span>V/J</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>  
+        <div class="main-content">
+        <section class="contact section" id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+        <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+        <h4 class="contact-sub-title padd-15">I' M AT YOUR SERVICES</h4>
+        <div class="row">
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Us On</h4>
+                <p>+92 3330545218</p>
+            </div>
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>India</p>
+            </div>
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>bbbb@gmail.com</p>
+            </div>
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-global-europe"></i></div>
+                <h4>Website</h4>
+                <p>bbbb.com</p>
+            </div>
+        </div>
+        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+        <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+        <div class="row">
+            <form action="/submit" method="POST">
+                <div class="contact-form padd-15">
+                    <div class="row">
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" >
+                            </div>
+                        </div>
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../static/script.js"></script>
+<script src="../static/style-switcher.js"></script>
+
+</body>
+</html>
