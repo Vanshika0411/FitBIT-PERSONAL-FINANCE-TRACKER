@@ -18,5 +18,5 @@ Frontend:
 
 HTML, CSS: Structure and styling for the user interface.
 JavaScript: Interactivity (e.g., form submissions, dynamic charts).
-Chart.js/D3.js: For data visualization.
+Chart.js/D3.js: For data visualization...
 
